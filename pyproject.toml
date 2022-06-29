@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dragoncurve"
+version = "0.1.0"
+description = "Dragon curve program made with Python"
+authors = ["Giuliano Pertile"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^12.4.4"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
