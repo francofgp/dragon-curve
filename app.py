@@ -4,7 +4,7 @@ from turtle import Turtle, Screen
 # Setup turtle
 turtle = Turtle("turtle")
 turtle.hideturtle()
-turtle.speed(0)
+turtle.speed("fastest")
 turtle.color("#ff69aa")
 
 # Setup Screen
@@ -17,6 +17,7 @@ screen.setup(width=1.0, height=1.0, startx=None, starty=None)
 
 # Draw
 LENGHT = 12
+turtle.forward(LENGHT)
 for element in dragon(15):
     if element == get_r():
         turtle.right(90)
