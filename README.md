@@ -9,6 +9,11 @@ Dragon curve fractal made with Python.
   ![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)
 </div>
 
+- [Dragon Curve 🐉](#dragon-curve-)
+  - [What is the Dragon Curve ?](#what-is-the-dragon-curve-)
+  - [Run the application](#run-the-application)
+  - [Want to know more?](#want-to-know-more)
+  - [License](#license)
 
 ## What is the Dragon Curve ?
 Foremost, the Dragon Curve is a fractal, in mathematics, fractal is a term used to describe geometric shapes containing detailed structure at arbitrarily small scales. Many fractals appear similar at various scales.
