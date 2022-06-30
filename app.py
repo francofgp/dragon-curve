@@ -1,13 +1,13 @@
-from dragon import dragon, get_r
+from dragon import dragon, R
 from turtle import Turtle, Screen
 
-# Setup turtle
+# Turtle setup
 turtle = Turtle("turtle")
 turtle.hideturtle()
 turtle.speed("fastest")
 turtle.color("#ff69aa")
 
-# Setup Screen
+# Screen setup
 screen = Screen()
 screen.title("Dragon Curve")
 screen.bgcolor("black")
@@ -16,10 +16,10 @@ screen.setup(width=1.0, height=1.0, startx=None, starty=None)
 
 
 # Draw
-LENGHT = 12
+LENGHT = 10
 turtle.forward(LENGHT)
-for element in dragon(15):
-    if element == get_r():
+for element in dragon(17):
+    if element == R:
         turtle.right(90)
         turtle.forward(LENGHT)
         # if you want circles use the line below instead

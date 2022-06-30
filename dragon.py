@@ -53,21 +53,3 @@ def dragon(n_iterations: int) -> str:
     for i in range(0, n_iterations):
         initial_sequence = iterate(initial_sequence)
     return initial_sequence
-
-
-def get_r() -> str:
-    """Get the string representation of the right turn, which is "R"
-
-    Returns:
-        str: "R"
-    """
-    return R
-
-
-def get_l() -> str:
-    """Get the string representation of the left turn, which is "L"
-
-    Returns:
-        str: "L"
-    """
-    return L
