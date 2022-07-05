@@ -20,8 +20,6 @@ Foremost, the Dragon Curve is a fractal, in mathematics, fractal is a term used 
 
 The dragon curve is probably most commonly thought of as the shape that is generated from repeatedly folding a strip of paper in half, although there are other curves that are called dragon curves that are generated differently.
 
-The dragon curve is probably most commonly thought of as the shape that is generated from repeatedly folding a strip of paper in half, although there are other curves that are called dragon curves that are generated differently.
-
 ## Run the application
 
 
