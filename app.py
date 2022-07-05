@@ -16,17 +16,17 @@ screen.setup(width=1.0, height=1.0, startx=None, starty=None)
 
 
 # Draw
-LENGHT = 10
-turtle.forward(LENGHT)
+LENGTH = 10
+turtle.forward(LENGTH)
 for element in dragon():
     if element == R:
         turtle.right(90)
-        turtle.forward(LENGHT)
+        turtle.forward(LENGTH)
         # if you want circles use the line below instead
         # turtle.circle(-4, 90, 36)
     else:
         turtle.left(90)
-        turtle.forward(LENGHT)
+        turtle.forward(LENGTH)
         # if you want circles use the line below instead
         # turtle.circle(4, 90, 36)
 
