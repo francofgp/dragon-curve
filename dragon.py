@@ -1,55 +1,21 @@
-R = "R"
-L = "L"
+from itertools import count
 
 
-def iterate(sequence: str) -> str:
+R = 0
+L = 1
+
+
+def dragon():
+    """Yields an infinite dragon curve.
+
+    dragon(n) is the complement of the bit to the left of the least
+    significant "1" in the binary expansion of n+1.
+
+    E.g., n = 3, n+1 = 4 = 100_2, so a(3) = (complement of bit to left of 1) = 1. -
+
+    Robert L. Brown, Nov 28 2001 [Adjusted to match offset by
+    N. J. A. Sloane, Apr 15 2021]
     """
-    Takes in a dragon curve sequence n, and returns sequence n+1, 
-    i.e.: 
-        when n= "R", returns "RRL"
-
-    Each dragon curve iteration can be found by copying the previous iteration, 
-    then an R, then a second copy of the previous iteration 
-    in reverse order with the L and R letters swapped.
-
-    Source: https://en.wikipedia.org/wiki/Dragon_curve
-
-    Args:
-        sequence (str): dragon curve sequence, formatted "RRL" for sequence 2 of the dragon curve
-
-    Returns:
-        str: sequence n+1
-    """
-    sequence = sequence+R+swapLetters(sequence[::-1])
-    return sequence
-
-
-def swapLetters(sequence: str) -> str:
-    """
-    Swap a dragon curve sequence. 
-    i.e.:
-     when sequence "RRL", returns "LLR"
-    """
-    newSequence = ""
-    for letter in sequence:
-        if letter == R:
-            newSequence = newSequence + L
-        else:
-            newSequence = newSequence + R
-    return newSequence
-
-
-def dragon(n_iterations: int) -> str:
-    """Takes in a number n, an return the dragon curve sequence i.e.:
-    When n=2, returns "RRL"
-
-    Args:
-        n_iterations (int): number of iterations of the dragon curve
-
-    Returns:
-        str: The dragon curve Sequence
-    """
-    initial_sequence = R
-    for i in range(0, n_iterations):
-        initial_sequence = iterate(initial_sequence)
-    return initial_sequence
+    for n in count():
+        binary = f"0{n+1:b}"
+        yield 1 - int(binary[binary.rfind("1") - 1])

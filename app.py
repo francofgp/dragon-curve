@@ -18,7 +18,7 @@ screen.setup(width=1.0, height=1.0, startx=None, starty=None)
 # Draw
 LENGHT = 10
 turtle.forward(LENGHT)
-for element in dragon(17):
+for element in dragon():
     if element == R:
         turtle.right(90)
         turtle.forward(LENGHT)
