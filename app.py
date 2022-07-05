@@ -11,6 +11,7 @@ turtle.color("#ff69aa")
 screen = Screen()
 screen.title("Dragon Curve")
 screen.bgcolor("black")
+screen.delay(1)
 screen.screensize(1920*3, 1080*3)
 screen.setup(width=1.0, height=1.0, startx=None, starty=None)
 
