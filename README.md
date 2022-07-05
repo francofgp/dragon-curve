@@ -1,7 +1,7 @@
 # Dragon Curve 🐉
 Dragon curve fractal made with Python.
 
-![](assets/dragon_curve_asset.png)
+![](assets/line-length-2.png)
 
 <div align="center">
 
@@ -34,7 +34,9 @@ cd dragon-curve/
 python app.py
 ```
 3. Enjoy
-   
+
+Use `--help` to discover more options.
+
 ![First example of the fractal](assets/dragon_curve_asset_animated.gif)
 
 ## Want to know more?
