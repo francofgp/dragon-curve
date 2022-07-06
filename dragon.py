@@ -1,8 +1,8 @@
 from itertools import count
 
 
-R = 0
-L = 1
+R = 1
+L = 0
 
 
 def dragon():
